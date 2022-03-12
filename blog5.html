@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+    font-family: Arial;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+div.head1{
+    grid-column: span 12;
+    background-color:#1f4544;
+   
+    
+
+}
+.welcom{
+    
+    display: inline-block;
+    font-family:'Arial';
+    color:aliceblue;
+    
+    font-size: 10%;
+    line-height:30px
+    
+}
+.login{
+    font-family:'Arial';
+    color:burlywood;
+    font-size: 10%;
+
+}
+.stayup{
+    display: inline-block;
+    font-family:'Arial';
+    color:aliceblue;
+   
+    font-size: 10%;
+}
+@media screen and (max-width: 1000px) {
+    .hdemp{display: none;}
+    
+  }
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+
+}
+.head2{
+    background-color:#3a8464;
+    grid-column: span 12;
+    margin: 0;
+
+}
+.MB{
+    display: inline-block;
+    font-family:'Arial';
+    color:aliceblue;
+    margin-left: 80px;
+    font-size:45px;
+    line-height:120px;
+    vertical-align:middle;
+}
+.LW{
+    display: inline-block;
+    font-family:'Arial';
+    color:aliceblue;
+    margin-left: 30px;
+    font-size:20px;
+    vertical-align:middle;
+}
+.grid3 {
+    overflow: hidden;
+    background-color: #8eb391;
+    
+  }
+  
+  .grid3 a {
+    float: left;
+    font-family:'Arial';
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height:20px;
+    vertical-align:middle;
+    margin-left: 70px;
+  }
+  .grid3 a.active {
+    background-color: #8eb391;
+    color: black;
+    margin-left: 70px;
+    font-size:20px;
+    line-height:20px;
+    vertical-align:middle;
+  }
+  
+  .grid3 .hum {
+    display: none;
+  }
+  .grid3 .link{
+    display: none;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .grid3 a:not(:first-child) {display: none;}
+    .grid3 a.hum {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .grid3.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+    
+  }
+
+
+.head3{
+    background-color:#8eb391;
+    grid-column: span 12;
+
+
+}
+.home{
+    display: inline-block;
+    font-family:'Arial';
+    margin-left: 80px;
+    font-size:20px;
+    line-height:40px;
+    vertical-align:middle;
+
+}
+.other{
+    display: inline-block;
+    font-family:'Arial';
+    margin-left: 40px;
+    font-size:20px;
+    line-height:35px;
+    vertical-align:middle;
+   
+
+
+}
+
+.h3link{
+    font-family:'Arial';
+    color:black;
+    font-size: 18px;
+    text-decoration:none;
+
+}
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+}
+
+.leftpart{
+    display: none;
+    grid-column: span 7;
+    margin-left:80px;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.leftpart11{
+    display: block;
+    grid-column: span 7;
+    margin-left:80px;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.empty{
+    display: none;
+    grid-column: span 7;
+    margin-left:80px;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.middle{
+    grid-column: span 2;
+
+}
+.righttable{
+
+    grid-column: span 2;
+    right: 120px;
+    height:450px;
+    background-color: #d8ddd4;
+    
+    
+   
+
+}
+@media screen and (max-width: 700px) {
+    .righttable {display: none;}
+  }
+
+.line{
+    display:inline-block;
+    background-color:green;
+    width: 0.6px;
+    height: 80px;
+    vertical-align:middle;
+}
+.lineparagraph{
+    margin-left: 10px;
+    display:inline-block;
+    font-size: medium;
+    width: 90%;
+    vertical-align:middle;
+}
+.plink{
+    color:#3a8464;
+    text-decoration:none;
+    
+}
+.leftpart22{
+    display: none;
+    grid-column: span 7;
+    margin-left:80px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.bulletpoint{
+    display: block;
+    margin-left:20px;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+.leftpart33{
+    display: none;
+    grid-column: span 7;
+    margin-left:80px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.grid5{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+
+}
+.bottom{
+    background-color:#1e4334;
+    grid-column: span 12;
+    
+
+}
+.tablelink{
+    text-decoration: none;
+    margin-left: 30px;
+    
+   
+}
+.bottomlink{
+    color:white;
+    text-decoration: none;
+    vertical-align: top; 
+}
+.righttable1{
+    display: none;
+    grid-column: span 7;
+    right: 120px;
+    height:450px;
+    background-color:#d8ddd4 ;
+}
+.contact{
+    display: none;
+    grid-column: span 7;
+}
+
+
+
+
+</style>
+<script>
+    function myFunction() {
+        var x = document.getElementById("rep");
+        if (x.className === "grid3") {
+          x.className += " responsive";
+        } else {
+          x.className = "grid3";
+        }
+    }
+    function Showcontent(idname){
+        var x = document.getElementById(idname);
+        var y = document.getElementById('doc');
+        var z=document.getElementById('leftpart1');
+        var e = document.getElementById('leftpart2');
+        var f = document.getElementById('leftpart3');
+        var g =document.getElementById('links');
+        var t = document.getElementById('leftpart11');
+        t.style.display='none';
+        if(y.style.display=='block'){
+            y.style.display='none';
+            x.style.display='block'
+        }
+        if(g.style.display=='block'){
+            g.style.display='none';
+            x.style.display='block'
+        }
+        if(z.style.display=='block'){
+            z.style.display='none';
+            x.style.display='block'
+        }
+        if(e.style.display=='block'){
+            e.style.display='none';
+            x.style.display='block'
+    
+        }
+        if(f.style.display=='block'){
+            f.style.display='none';
+            x.style.display='block'
+    
+         }
+        
+        if(x!=z){
+            x.style.display='none';
+        }
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+            
+        } else {
+            x.style.display = 'none';
+            
+        }
+        x.style.display='block'
+    
+    }
+    function ajaxcall(){
+        var z=document.getElementById('leftpart1');
+        var e = document.getElementById('leftpart2');
+        var f = document.getElementById('leftpart3');
+        var g =document.getElementById('links');
+        var x = document.getElementById("doc");
+        var t = document.getElementById('leftpart11');
+        
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            x.innerHTML =this.responseText;
+        }
+        };
+        xhttp.open("GET", "contact.txt", true);
+        xhttp.send();
+        
+
+        
+        t.style.display='none';
+            
+        
+        if(z.style.display=='block'){
+            z.style.display='none';
+            x.style.display='block'
+        }
+        if(e.style.display=='block'){
+            e.style.display='none';
+            x.style.display='block'
+    
+        
+        }
+        if(g.style.display=='block'){
+            g.style.display='none';
+            x.style.display='block'
+        }
+        if(f.style.display=='block'){
+            f.style.display='none';
+            x.style.display='block'
+    
+         }
+         x.style.display='block'
+         
+        
+
+        
+        
+
+    }
+    
+ </script>
+
+
+</head>
+<body>
+    <section class="'grid1">
+        <div class="head1" id="change1">
+            <span class="hdemp">
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp; 
+           
+            </span>
+            <a class="welcom">Welcome,Guest</a>
+            <a class='login'href="https://www.mcgill.ca/">Login</a>
+            <a class="login" href="https://www.mcgill.ca/">Sign Up</a>
+            <span class="hdemp">
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            
+            <a class="stayup">Stay Updated!</a>
+            <a class='login' href="https://www.mcgill.ca/">Subscribe via RSS</a>
+            <a class='login'href="https://www.mcgill.ca/">Email</a>
+    
+        </div>
+    </section>
+    <section class="grid2">
+        <div class="head2"id="change2">
+            <span class="MB">My Blog</span>
+            <span class="LW">Luke Wu, a passionate software developer</span>
+        </div>
+    </section>
+    
+    <div class="grid3" id="rep">
+            <a onclick="Showcontent('leftpart1')" href="javascript:void(0);" class="active">HOME</a>
+            <a onclick="Showcontent('leftpart2')" href="javascript:void(0);">ABOUT</a>
+            <a onclick="Showcontent('leftpart3')" href="javascript:void(0);">BLOG</a>
+            <a onclick="ajaxcall()" href="javascript:void(0);">CONTACT</a>
+            <a onclick="Showcontent('links')"href="javascript:void(0);" class="link">LINKS</a>
+            <a href="javascript:void(0);" class="hum"  onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+    </div>
+    <section class="grid4">
+        
+        
+        <div class='leftpart' id="leftpart1">
+            <span class="pheaders"><b>Don't Cancel Chunk!</b></span>
+            <p class="pwithlink">on July 01 in <a class="plink" href="https://www.mcgill.ca/"id='change5'>General</a> lagged <a class="plink"id='change6' href="https://www.mcgill.ca/">peititions</a> by <a class="plink"id='change7' href="https://www.mcgill.ca/"> admin </a></p>
+            <p class="paragraph">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            <div>
+                <hr class="line" id="change14"><p class="lineparagraph">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+            <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<a class="plink" id="change15" href="https://www.mcgill.ca/">Read More</a> 
+
+            </p>
+        </div>
+        <div class="leftpart22"id=leftpart2>
+            <span class="pheaders"><b>Alien Spacecraft found in New Mexico</b></p></span>
+                <p class="pwithlink">on July 01 in <a class="plink" href="https://www.mcgill.ca/"id='change8'>General</a> lagged <a class="plink"id='change9' href="https://www.mcgill.ca/">peititions</a> by <a class="plink"id='change10' href="https://www.mcgill.ca/"> admin </a></p>
+    
+                <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div>
+                    <ur class="bulletpoint">
+                        <li>vero eos et accusamus et iusto odio dignissimos ducimus</li>
+                        <li>quas molestias excepturi sint occaecati cupiditate</li>
+                        <li>laborum et dolorum fuga. Et harum quidem rerum facilis est </li>
+    
+                    </ur>
+                </div>
+                <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                
+
+        </div>
+        <div class='leftpart11' id="leftpart11">
+            <span class="pheaders"><b>Don't Cancel Chunk!</b></span>
+            <p class="pwithlink">on July 01 in <a class="plink" href="https://www.mcgill.ca/"id='change5'>General</a> lagged <a class="plink"id='change6' href="https://www.mcgill.ca/">peititions</a> by <a class="plink"id='change7' href="https://www.mcgill.ca/"> admin </a></p>
+            <p class="paragraph">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            <div>
+                <hr class="line" id="change14"><p class="lineparagraph">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+            <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<a class="plink" id="change15" href="https://www.mcgill.ca/">Read More</a> 
+
+            </p>
+        </div>
+        <div class="leftpart22"id=leftpart2>
+            <span class="pheaders"><b>Alien Spacecraft found in New Mexico</b></p></span>
+                <p class="pwithlink">on July 01 in <a class="plink" href="https://www.mcgill.ca/"id='change8'>General</a> lagged <a class="plink"id='change9' href="https://www.mcgill.ca/">peititions</a> by <a class="plink"id='change10' href="https://www.mcgill.ca/"> admin </a></p>
+    
+                <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div>
+                    <ur class="bulletpoint">
+                        <li>vero eos et accusamus et iusto odio dignissimos ducimus</li>
+                        <li>quas molestias excepturi sint occaecati cupiditate</li>
+                        <li>laborum et dolorum fuga. Et harum quidem rerum facilis est </li>
+    
+                    </ur>
+                </div>
+                <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                
+
+        </div>
+        <div class="leftpart33" id="leftpart3">
+            <span class="pheaders"><b>Ghostly Goo in your Kitchen Sink?</b></span>
+            <p class="pwithlink">on July 01 in <a class="plink" href="https://www.mcgill.ca/"id='change11'>General</a> lagged <a class="plink"id='change12' href="https://www.mcgill.ca/">peititions</a> by <a class="plink"id='change13' href="https://www.mcgill.ca/"> admin </a></p>
+
+            <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<a class="plink"id="change16" href="https://www.mcgill.ca/">Read More</a> 
+
+            <h4 style="font-size: small;margin-top: -5px;">Header Leavel 4</h4>
+            <p style="font-size: small;margin-top: -5px;margin-left: 20px;">
+                <b>1.</b> Contrary to popular belief, Lorem Ipsum is not simply random text.
+                <br><b>2.</b> it over 2000 years old. Richard McClinto
+            </p>
+            <div>
+                <hr class="line"id="change17"><p class="lineparagraph">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+            <h3 style="font-size: large;margin-top: -5px;">Header Level 3</h3>
+            <div>
+                <ur class="bulletpoint">
+                    <li>vero eos et accusamus et iusto odio dignissimos ducimus</li>
+                    <li>quas molestias excepturi sint occaecati cupiditate</li>
+                    <li>laborum et dolorum fuga. Et harum quidem rerum facilis est </li>
+
+                </ur>
+            </div>
+            <p style="font-size: small;margin-top: -5px;margin-left: 20px;">
+                <b>1.</b> Contrary to popular belief, Lorem Ipsum is not simply random text.
+                <br><b>2.</b> it over 2000 years old. Richard McClinto
+            </p>
+        </div>
+        <div class="righttable1" id="links">
+            <span >
+                <br><font color="black";><b style="margin-left: 20px;">Categories</b></font>
+                <br><a class="tablelink" href="https://www.mcgill.ca/"><font color="black">General</font></a>
+                <br><a class="tablelink"href="https://www.youtube.com/watch?v=VS6RUJ_Q2LU"><font color="black">Ghost Sightins</font></a>
+                <br><a class="tablelink" href="https://www.livescience.com/roswell-ufo-crash-what-really-happened.html"><font color="black">UFO Crashes</font></a>
+                <br><a class="tablelink"href="https://www.businessinsider.com/true-government-conspiracies-2013-12"><font color="black">Government Coverups</font></a>
+                <br><a class="tablelink"href="https://www.internationaltrucks.com/en"><font color="black">International</font></a></span>
+            </span>
+            <span> 
+                <br><font color="black";>&nbsp;&nbsp;<b style="margin-left: 15px;">Rencent Posts</b></font>
+                <br><a class="tablelink"href="https://www.nytimes.com/2020/05/14/style/haunted-house-ghost-quarantine.html"><font color="black">Ghost Sightings in Mansion</font></a>
+                <br><a class="tablelink"href="https://www.popsci.com/space/why-ufos-remain-unknown/"><font color="black">UFO picked up by satelites</font></a>
+                <br><a class="tablelink"href="https://omrf.org/findings/are-there-mutants-among-us/"><font color="black">Mutants amoung us</font></a>
+                <br><a class="tablelink"href="https://www.livescience.com/24598-bigfoot.html"><font color="black">Bigfoot: Fact of Fiction</font></a>
+            </span>
+            <span>
+                <br><font color="black">&nbsp;&nbsp;<b style="margin-left: 15px;">Archives</b></font>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">June 2008</font></a>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">May 2008</font></a>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">April 2008</font></a>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">March 2008</font></a>
+                                    
+
+            </span>
+            
+            
+            
+        </div>
+        <div class="contact" id ='doc'>
+            <a>bug</a>
+
+        </div>
+        
+        <div class="empty"id='emp'>
+
+        </div>
+
+        <div class="middle">
+
+        </div>
+        <div id="change19"class="righttable">
+            <span >
+                <br><font color="black";><b style="margin-left: 20px;">Categories</b></font>
+                <br><a class="tablelink" href="https://www.mcgill.ca/"><font color="black">General</font></a>
+                <br><a class="tablelink"href="https://www.youtube.com/watch?v=VS6RUJ_Q2LU"><font color="black">Ghost Sightins</font></a>
+                <br><a class="tablelink" href="https://www.livescience.com/roswell-ufo-crash-what-really-happened.html"><font color="black">UFO Crashes</font></a>
+                <br><a class="tablelink"href="https://www.businessinsider.com/true-government-conspiracies-2013-12"><font color="black">Government Coverups</font></a>
+                <br><a class="tablelink"href="https://www.internationaltrucks.com/en"><font color="black">International</font></a></span>
+            </span>
+            <span> 
+                <br><font color="black";>&nbsp;&nbsp;<b style="margin-left: 15px;">Rencent Posts</b></font>
+                <br><a class="tablelink"href="https://www.nytimes.com/2020/05/14/style/haunted-house-ghost-quarantine.html"><font color="black">Ghost Sightings in Mansion</font></a>
+                <br><a class="tablelink"href="https://www.popsci.com/space/why-ufos-remain-unknown/"><font color="black">UFO picked up by satelites</font></a>
+                <br><a class="tablelink"href="https://omrf.org/findings/are-there-mutants-among-us/"><font color="black">Mutants amoung us</font></a>
+                <br><a class="tablelink"href="https://www.livescience.com/24598-bigfoot.html"><font color="black">Bigfoot: Fact of Fiction</font></a>
+            </span>
+            <span>
+                <br><font color="black">&nbsp;&nbsp;<b style="margin-left: 15px;">Archives</b></font>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">June 2008</font></a>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">May 2008</font></a>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">April 2008</font></a>
+                <br><a class="tablelink"href="https://www.mcgill.ca/"><font color="black">March 2008</font></a>
+                                    
+
+            </span>
+       
+        </div>
+    </section>
+    <section class="grid5"> 
+        <div id='change18'class="bottom">
+            <div style="display:inline-block;margin-left: 80px;">
+                <p style="color: bisque;">Links</p>
+                <a class="bottomlink"href="https://helpx.adobe.com/ca/photoshop/tutorials.html">PSDtuts - Photoshop tutorials</a>
+                <br><a class="bottomlink" href="https://code.tutsplus.com/">NETtuts - Web development and sesign tutorials</a>
+                <br><a class="bottomlink"href="https://helpx.adobe.com/ca/illustrator/tutorials.html">Vector Tuts - Illustrator and vector tutorials</a>
+
+                <br><a class="bottomlink"href="https://thevirtualinstructor.com/adobeflashlessons.html">FlashTuts - Adobe Flash tutorials</a>
+
+            </div>
+            <div style="display:inline-block;margin-left: 200px;">
+                <p style="color: bisque;vertical-align: top;">Follow our updates</p>
+                <br><a class="bottomlink"href="https://www.cs.mcgill.ca/">Subscribe to RSS Feed</a>
+                <br><a class="bottomlink"href="https://en.wikipedia.org/wiki/RSS#:~:text=RSS%20(RDF%20Site%20Summary%20or,standardized%2C%20computer%2Dreadable%20format.&text=RSS%20feed%20data%20is%20presented,content%20is%20called%20web%20syndication.">What is Rss?</a>
+                 <br><a class="bottomlink"href="https://www.mcgill.ca/">Email Updates</a>
+                 
+ 
+            </div>
+            <div style="display:inline-block;margin-left: 300px; vertical-align: top;">
+                <p style="color: bisque;font-size: small;">
+                    Copyright @ 2008
+                    <br>All Right Reserved.
+                </p>
+
+            </div>
+        
+        </div>
+
+    </section>
+        
+   
+    
+
+    
+</body>
+</html>
